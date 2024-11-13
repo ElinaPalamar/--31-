@@ -30,6 +30,7 @@ def plot_line_chart(years, data1, data2, country1, country2, indicator):
     plt.xlabel("Year")
     plt.ylabel(indicator)
     plt.title(f"{indicator} for {country1} and {country2} (2002-2005)")
+    plt.xticks(years)  # Фіксуємо цілі значення для осі X
     plt.legend()
     plt.grid()
     plt.show()
@@ -40,6 +41,7 @@ def plot_bar_chart(years, data, country, indicator):
     plt.xlabel("Year")
     plt.ylabel(indicator)
     plt.title(f"{indicator} in {country} (2002-2005)")
+    plt.xticks(years)  # Фіксуємо цілі значення для осі X
     plt.show()
 
 def main():
